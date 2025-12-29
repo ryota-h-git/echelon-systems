@@ -1,0 +1,31 @@
+@use "../global" as global;
+
+
+
+.p-pc-header__logo {
+  width: 80px;
+  height: 100%;
+  img {
+    width: 100%;
+
+    @include global.mq(pc) {
+      transform: scale(2); // 1.2倍に拡大
+      transform-origin: center;
+    }
+  }
+}
+
+.p-pc-header__nav {
+  display: flex;
+  align-items: center;
+ 
+  & ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  & li:not(:last-child) a{
+    color: #E8EAF0;
+  }
+}

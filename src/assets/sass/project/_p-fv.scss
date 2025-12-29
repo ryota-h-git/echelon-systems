@@ -1,0 +1,107 @@
+@use "../global" as global;
+
+// ======================================
+// Project : p-fv
+// ======================================
+
+.p-fv {
+    position: relative;
+    padding: 140px 0 120px;
+    background: linear-gradient(135deg, #0b1220 0%, #020617 100%);
+    color: #fff;
+    overflow: hidden;
+  
+    @include global.mq(sp) {
+      padding: 96px 0 80px;
+    }
+  }
+  
+  .p-fv__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  
+  #fvDots {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  /* --------------------------------------
+    Inner
+  -------------------------------------- */
+  .p-fv__inner {
+}
+
+.p-fv__wrapper {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .p-fv__badge {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  
+  /* --------------------------------------
+    Title
+  -------------------------------------- */
+  .p-fv__title {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+  }
+  
+  .p-fv__title-accent {
+    color: #38bdf8;
+  }
+  
+  /* --------------------------------------
+    Text
+  -------------------------------------- */
+  .p-fv__text {
+    max-width: 720px;
+    font-size: 16px;
+    line-height: 1.9;
+    color:#94A3B8f5;
+    margin-bottom: 48px;
+    text-align: center;
+  
+    br {
+      @include global.mq(sp) {
+        display: none;
+      }
+    }
+  }
+  
+  /* --------------------------------------
+    Actions
+  -------------------------------------- */
+  .p-fv__actions {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 72px;
+  
+    @include global.mq(sp) {
+      flex-direction: column;
+      gap: 16px;
+      max-width: 320px;
+    }
+  }
+  
+  /* --------------------------------------
+    KPI
+  -------------------------------------- */
+  .p-fv__kpi {
+    display: flex;
+    gap: 48px;
+  
+    @include global.mq(sp) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }

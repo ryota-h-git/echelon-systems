@@ -1,0 +1,12 @@
+@use "../global" as global;
+.p-problem {
+    background-color:  #0A0E1A;
+    padding-block: 128px;
+    margin-top: -1px;
+}
+
+.p-problem__list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
