@@ -1,6 +1,7 @@
 @use "../global" as global;
+
 .p-problem {
-    background-color:  #0A0E1A;
+    background-color: #0A0E1A;
     padding-block: 128px;
     margin-top: -1px;
 }
@@ -9,4 +10,10 @@
     display: flex;
     justify-content: center;
     gap: 32px;
+}
+
+.p-problem__item {
+    border-radius: 8px;
+    border: 1px solid rgba(212, 24, 61, 0.20);
+    background: #12172B;
 }

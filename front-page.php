@@ -188,7 +188,6 @@
                             <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/contact/')); ?>">相談する</a>
                         </div>
                     </div>
-                     <span>テスト</span>
                 </div>
             </section>
 
