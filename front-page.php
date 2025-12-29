@@ -154,7 +154,7 @@
                 <div class="l-container">
                     <header class="c-sectionTitle">
                         <p class="c-sectionTitle__en">FLOW</p>
-                        <h2 class="c-sectionTitle__jp">導入の流れ</h2>
+                        <h2 class="c-sectionTitle__jp">導入の</h2>
                     </header>
 
                     <ol class="p-flow__list">
@@ -184,10 +184,11 @@
                         <!-- 料金カードは将来再利用しやすい → Component -->
                         <div class="c-priceCard">
                             <h3 class="c-priceCard__title">ベーシック</h3>
-                            <p class="c-priceCard__price">¥00,000</p>
+                            <p class="c-priceCard__price">¥30,000</p>
                             <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/contact/')); ?>">相談する</a>
                         </div>
                     </div>
+                     <span>テスト</span>
                 </div>
             </section>
 
