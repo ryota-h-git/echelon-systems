@@ -3,17 +3,48 @@
 .p-problem {
     background-color: #0A0E1A;
     padding-block: 128px;
-    margin-top: -1px;
 }
 
 .p-problem__list {
     display: flex;
     justify-content: center;
     gap: 32px;
+    margin-top: 64px;
 }
 
 .p-problem__item {
     border-radius: 8px;
     border: 1px solid rgba(212, 24, 61, 0.20);
-    background: #12172B;
+    background: #0f1323;
+}
+
+.p-problem__scroll-wrap {
+    padding-block: 128px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-problem__scroll {
+    width: 4px;
+    height: 64px;
+    background: linear-gradient(180deg, #D4183D 0%, #3B82F6 100%);
+
+    animation-name: scrollbar;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    transform-origin: top;
+
+    @keyframes scrollbar {
+        0% {
+            transform: scaleY(0);
+        }
+
+        100% {
+            transform: scaleY(1);
+        }
+    }
 }

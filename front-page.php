@@ -96,11 +96,11 @@
             <section class="p-problem">
                 <div class="l-container">
                     <!-- 見出しは再利用 → Component -->
-                    <header class="c-sectionTitle">
+                    <div class="c-sectionTitle">
                         <p class="c-sectionTitle__en">PROBLEM</p>
                         <h2 class="c-sectionTitle__jp">こんなお悩みありませんか？</h2>
-                    </header>
-
+                        <p class="c-sectionTitle__sub">多くの企業が抱えるシステム課題を、私たちが解決します</p>
+                    </div>
                     <!-- カードは再利用 → Component -->
                     <ul class="p-problem__list">
                         <li class="c-card p-problem__item">
@@ -125,29 +125,78 @@
                             <p class="c-card__text">社内に専門的な技術者がおらず、システム開発が進まない</p>
                         </li>
                     </ul>
-                </div>
+                    <div class="p-problem__scroll-wrap">
+                        <div class="p-problem__scroll">
+                        </div>
+                    </div>
             </section>
-
-            <!-- Feature : Project -->
-            <section class="p-feature" id="feature">
-                <div class="l-container">
-                    <header class="c-sectionTitle">
-                        <p class="c-sectionTitle__en">FEATURE</p>
-                        <h2 class="c-sectionTitle__jp">特徴</h2>
-                    </header>
-
-                    <div class="p-feature__items">
-                        <article class="p-feature__item">
-                            <h3 class="p-feature__title">特徴01</h3>
-                            <p class="p-feature__text">説明文。</p>
-                        </article>
-                        <article class="p-feature__item">
-                            <h3 class="p-feature__title">特徴02</h3>
-                            <p class="p-feature__text">説明文。</p>
-                        </article>
+            <section class="p-solutions">
+            <div class="c-sectionTitle">
+                        <p class="c-sectionTitle__en --type2">Solutions</p>
+                        <h2 class="c-sectionTitle__jp">エシュロンシステムの解決策</h2>
+                        <p class="c-sectionTitle__sub">豊富な実績と確かな技術力で、お客様の課題を解決します</p>
+                    </div>
+                <div class="p-solutions__grid p-solutions__grid--primary">
+                    <div class="c-card">
+                        <div class="c-card__icon">✔</div>
+                        <h3 class="c-card__title">モダンな技術スタックへの移行</h3>
+                        <p class="c-card__text">
+                            最新技術を活用し、保守性・拡張性の高いシステムを構築します
+                        </p>
+                    </div>
+                    <div class="c-card">
+                        <div class="c-card__icon">📈</div>
+                        <h3 class="c-card__title">DX戦略の立案と実行支援</h3>
+                        <p class="c-card__text">
+                            業務分析から実装まで、一貫したDX推進をサポートします
+                        </p>
+                    </div>
+                    <div class="c-card">
+                        <div class="c-card__icon">👥</div>
+                        <h3 class="c-card__title">経験豊富な開発チームの提供</h3>
+                        <p class="c-card__text">
+                            15年以上の実績を持つエンジニアが、確実にプロジェクトを成功へ導きます
+                        </p>
+                    </div>
+                </div>
+                <div class="p-solutions__grid p-solutions__grid--secondary">
+                    <div class="c-card c-card--small">
+                        <div class="c-card__icon">🛡</div>
+                        <h3 class="c-card__title">高いセキュリティ</h3>
+                        <p class="c-card__text">金融・医療レベルのセキュリティ対策</p>
+                    </div>
+                    <div class="c-card c-card--small">
+                        <div class="c-card__icon">⚡</div>
+                        <h3 class="c-card__title">迅速な開発</h3>
+                        <p class="c-card__text">アジャイル手法で柔軟かつスピーディに対応</p>
                     </div>
                 </div>
             </section>
+
+
+        </div>
+        </section>
+
+        <!-- Feature : Project -->
+        <section class="p-feature" id="feature">
+            <div class="l-container">
+                <header class="c-sectionTitle">
+                    <p class="c-sectionTitle__en">FEATURE</p>
+                    <h2 class="c-sectionTitle__jp">特徴</h2>
+                </header>
+
+                <div class="p-feature__items">
+                    <article class="p-feature__item">
+                        <h3 class="p-feature__title">特徴01</h3>
+                        <p class="p-feature__text">説明文。</p>
+                    </article>
+                    <article class="p-feature__item">
+                        <h3 class="p-feature__title">特徴02</h3>
+                        <p class="p-feature__text">説明文。</p>
+                    </article>
+                </div>
+            </div>
+
 
             <!-- Flow : Project -->
             <section class="p-flow">
@@ -215,7 +264,7 @@
                     <a class="c-btn c-btn--primary" href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a>
                 </div>
             </section>
-        </div>
+            </div>
     </main>
     <?php wp_footer(); ?>
 </body>
