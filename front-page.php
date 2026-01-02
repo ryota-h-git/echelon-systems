@@ -131,11 +131,11 @@
                     </div>
             </section>
             <section class="p-solutions">
-            <div class="c-sectionTitle">
-                        <p class="c-sectionTitle__en --type2">Solutions</p>
-                        <h2 class="c-sectionTitle__jp">エシュロンシステムの解決策</h2>
-                        <p class="c-sectionTitle__sub">豊富な実績と確かな技術力で、お客様の課題を解決します</p>
-                    </div>
+                <div class="c-sectionTitle">
+                    <p class="c-sectionTitle__en --type2">Solutions</p>
+                    <h2 class="c-sectionTitle__jp">エシュロンシステムの解決策</h2>
+                    <p class="c-sectionTitle__sub">豊富な実績と確かな技術力で、お客様の課題を解決します</p>
+                </div>
                 <div class="p-solutions__grid p-solutions__grid--primary">
                     <div class="c-card">
                         <div class="c-card__icon">✔</div>
